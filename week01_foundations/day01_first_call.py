@@ -6,7 +6,7 @@ from openai import OpenAI
 load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 client = OpenAI(
-    api_key=os.getenv("sk-a4ba06f8cd6d44d8bb97635542a33551"),
+    api_key=os.getenv("OPENAI_API_KEY"),
     base_url="https://api.deepseek.com",
 )
 
